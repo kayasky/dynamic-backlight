@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dynamic Backlight</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    socket.on('updatedColours', function (colourValues) {
+      const item = document.createElement('li');
+      document.body.style.background = `rgb(${colourValues.red}, ${colourValues.green}, ${colourValues.blue})`;
+    });
+  </script>
+</body>
+
+</html>

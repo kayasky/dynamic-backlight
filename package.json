@@ -1,4 +1,7 @@
 {
+  "name": "dynamic-backlight",
+  "version": "0.0.1",
+  "description": "Dynamic Backlight",
   "scripts": {
     "start": "ts-node src/index.ts"
   },
@@ -7,8 +10,10 @@
   },
   "dependencies": {
     "@types/node": "^20.10.3",
+    "express": "^4.18.2",
     "get-image-colors": "^4.0.1",
     "node-webcam": "^0.8.2",
+    "socket.io": "^4.7.2",
     "ts-node": "^10.9.1"
   }
 }
