@@ -20,3 +20,4 @@ To start the application, run the following command:
 ```bash
 npm run start
 ```
+Now go to `http://localhost:3000` on your favourite browser.
